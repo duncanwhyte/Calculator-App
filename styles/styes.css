@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Alegreya", serif;
+}
+
+.container-theme__1 {
+  background: #3a4764;
+  color: #FFF;
+}
+
+.container-theme__2 {
+  background: #e6e6e6;
+  color: #35352c;
+}
+
+.container-theme__3 {
+  background: #160628;
+  color: #ffe53d;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header .theme-selector__section {
+  display: flex;
+  align-items: center;
+}
+#header .theme-selector__title {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+#header .theme-numbers {
+  display: flex;
+  justify-content: space-around;
+}
+#header .theme-1-toggle__container {
+  background-color: #232c43;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem;
+  position: relative;
+}
+#header .toggler-theme__1 {
+  background-color: #d03f2f;
+  padding: 0.5rem;
+  border-radius: 10px;
+  position: absolute;
+  left: 0.3rem;
+}
+#header .theme-2-toggle__container {
+  background-color: #d1cccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem;
+  position: relative;
+}
+#header .theme-3-toggle__container {
+  background-color: #1d0934;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem;
+  position: relative;
+}
+#header .toggler-theme__2 {
+  background-color: #ca5502;
+  padding: 0.5rem;
+  border-radius: 10px;
+  position: absolute;
+  left: 1.5rem;
+}
+#header .toggler-theme__3 {
+  background-color: #00e0d1;
+  padding: 0.5rem;
+  border-radius: 10px;
+  position: absolute;
+  left: 2.8rem;
+}
+#header .theme-button {
+  border-radius: 10px;
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.result-display__1 {
+  margin: 1rem auto;
+  border-radius: 10px;
+  background-color: #182034;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 22rem;
+}
+.result-display__1 .current-result__1 {
+  color: #FFF;
+}
+
+.result-display__2 {
+  margin: 1rem auto;
+  border-radius: 10px;
+  background-color: #ededed;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 22rem;
+}
+.result-display__2 .current-result__2 {
+  color: #35352c;
+}
+
+.result-display__3 {
+  margin: 1rem auto;
+  border-radius: 10px;
+  background-color: #1d0934;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 22rem;
+}
+.result-display__3 .current-result__3 {
+  color: #ffe53d;
+}
+
+.keyboard-theme__1 {
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: #182034;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+  grid-gap: 1vw;
+  max-width: 22rem;
+}
+.keyboard-theme__1 .theme-1__buttons {
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #eae3dc;
+  cursor: pointer;
+  color: #444b5a;
+}
+.keyboard-theme__1 .theme-1-operation__buttons {
+  background-color: #eae3dc;
+  border-radius: 10px;
+  color: #444b5a;
+  font-size: 1.5rem;
+}
+.keyboard-theme__1 .theme-1-delete__button {
+  background-color: #637097;
+  color: #FFF;
+  border-radius: 10px;
+}
+.keyboard-theme__1 .theme-1-reset__button {
+  background-color: #637097;
+  color: #FFF;
+  grid-column: 1/3;
+  border-radius: 10px;
+}
+.keyboard-theme__1 .theme-1-equals__button {
+  background-color: #d03f2f;
+  color: #FFF;
+  grid-column: 3/5;
+  border-radius: 10px;
+}
+
+.keyboard-theme__2 {
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: #d1cccc;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+  grid-gap: 1vw;
+  max-width: 22rem;
+}
+.keyboard-theme__2 .theme-2__buttons {
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #e5e4e1;
+  cursor: pointer;
+  color: #35352c;
+}
+.keyboard-theme__2 .theme-2-operation__buttons {
+  background-color: #e5e4e1;
+  border-radius: 10px;
+  color: #35352c;
+  font-size: 1.5rem;
+}
+.keyboard-theme__2 .theme-2-delete__button {
+  background-color: #377f86;
+  color: #FFF;
+  border-radius: 10px;
+}
+.keyboard-theme__2 .theme-2-reset__button {
+  background-color: #377f86;
+  color: #FFF;
+  grid-column: 1/3;
+  border-radius: 10px;
+}
+.keyboard-theme__2 .theme-2-equals__button {
+  background-color: #ca5502;
+  color: #FFF;
+  grid-column: 3/5;
+  border-radius: 10px;
+}
+
+.keyboard-theme__3 {
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: #1d0934;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+  grid-gap: 1vw;
+  max-width: 22rem;
+}
+.keyboard-theme__3 .theme-3__buttons {
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #341c4f;
+  cursor: pointer;
+  color: #ffe53d;
+}
+.keyboard-theme__3 .theme-3-operation__buttons {
+  background-color: #341c4f;
+  border-radius: 10px;
+  color: #ffe53d;
+  font-size: 1.5rem;
+}
+.keyboard-theme__3 .theme-3-delete__button {
+  background-color: #58077d;
+  color: #FFF;
+  border-radius: 10px;
+}
+.keyboard-theme__3 .theme-3-reset__button {
+  background-color: #58077d;
+  color: #FFF;
+  grid-column: 1/3;
+  border-radius: 10px;
+}
+.keyboard-theme__3 .theme-3-equals__button {
+  background-color: #00e0d1;
+  color: #FFF;
+  grid-column: 3/5;
+  border-radius: 10px;
+}
+
+.attribution {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styes.css.map */

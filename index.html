@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script defer src="./scripts/calculate.js"></script>
+  <script defer src="./scripts/toggle.js"></script>
+</head>
+<body class="container-theme__1">
+  <header id="header">
+    <h1 class="calc-theme-1">calc</h1>
+    <div class="theme-selector__section">
+      <h2 class="theme-selector__title">Theme</h2>
+      <div class="theme-selector">
+        <div class="theme-numbers">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+        <div class="theme-1-toggle__container">
+          <div class="toggler-theme__1"></div>
+          <div id="theme-1__button" class="theme-button"></div>
+          <div id="theme-2__button" class="theme-button"></div>
+          <div id="theme-3__button" class="theme-button"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="result-display__1">
+      <h2 class="current-result__1">0</h2>
+    </div>
+    <div class="keyboard-theme__1">
+      <button class="theme-1__buttons" data-number>7</button>
+      <button class="theme-1__buttons" data-number>8</button>
+      <button class="theme-1__buttons" data-number>9</button>
+      <button class="theme-1-delete__button" data-delete>DEL</button>
+      <button class="theme-1__buttons" data-number>4</button>
+      <button class="theme-1__buttons" data-number>5</button>
+      <button class="theme-1__buttons" data-number>6</button>
+      <button class="theme-1-operation__buttons" data-operation>+</button>
+      <button class="theme-1__buttons" data-number>1</button>
+      <button class="theme-1__buttons" data-number>2</button>
+      <button class="theme-1__buttons" data-number>3</button>
+      <button class="theme-1-operation__buttons" data-operation>-</button>
+      <button class="theme-1__buttons" data-number>.</button>
+      <button class="theme-1__buttons" data-number>0</button>
+      <button class="theme-1-operation__buttons" data-operation>÷</button>
+      <button class="theme-1-operation__buttons" data-operation>X</button>
+      <button class="theme-1-reset__button" data-reset>RESET</button>
+      <button class="theme-1-equals__button" data-equals>=</button>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      Coded by <a href="#">duncan_whyte</a>
+    </div>
+  </footer>
+</body>
+</html>

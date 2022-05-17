@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // border: 1.5px red solid;
+}
+body { 
+    font-family: 'Alegreya', serif;
+}
+// BACKGROUND CLASSES FOR JS 
+.container-theme__1 {
+    background: hsl(222, 26%, 31%);
+    color: #FFF;
+}
+.container-theme__2 {
+    background: hsl(0, 0%, 90%);
+    color: hsl(60, 10%, 19%);
+}
+.container-theme__3 {
+    background: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+}
+// HEADER SECTION
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .theme-selector__section {
+        display: flex;
+        align-items: center;
+    }
+    .theme-selector__title {
+        font-size: 1.2rem;
+        margin: 0 1rem;
+    }
+    .theme-numbers {
+        display: flex;
+        justify-content: space-around;
+    }
+    .theme-1-toggle__container {
+        background-color: hsl(223, 31%, 20%);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.2rem;
+        position: relative;
+    }
+    .toggler-theme__1 {
+        background-color: hsl(6, 63%, 50%);
+        padding: 0.5rem;
+        border-radius: 10px;
+        position: absolute;
+        left: 0.3rem;
+    }
+    // THEME TOGGLE CONTAINER CLASSES FOR JS
+    .theme-2-toggle__container {
+        background-color: hsl(0, 5%, 81%);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.2rem;
+        position: relative;
+    }
+    .theme-3-toggle__container {
+        background-color: hsl(268, 71%, 12%);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.2rem;
+        position: relative;
+    }
+    .toggler-theme__2 {
+        background-color: hsl(25, 98%, 40%);
+        padding: 0.5rem;
+        border-radius: 10px;
+        position: absolute;
+        left: 1.5rem;
+    }
+    .toggler-theme__3 {
+        background-color: hsl(176, 100%, 44%);
+        padding: 0.5rem;
+        border-radius: 10px;
+        position: absolute;
+        left: 2.8rem;
+    }
+    .theme-button {
+        border-radius: 10px;
+        width: 1.2rem;
+        height: 1.2rem;
+        cursor: pointer;
+    }
+}
+// RESULT DISPLAY
+.result-display__1 {
+    margin: 1rem auto;
+    border-radius: 10px;
+    background-color: hsl(224, 36%, 15%);
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 22rem;
+    .current-result__1 {
+        color: #FFF;
+    }
+}
+// RESULT DISPLAY CLASSES FOR JS 
+.result-display__2 {
+    margin: 1rem auto;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 93%);
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 22rem;
+    .current-result__2 {
+        color: hsl(60, 10%, 19%);
+    }
+}
+.result-display__3 {
+    margin: 1rem auto;
+    border-radius: 10px;
+    background-color: hsl(268, 71%, 12%);
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 22rem;
+    .current-result__3 {
+        color: hsl(52, 100%, 62%);
+    }
+}
+
+// 
+
+.keyboard-theme__1 {
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-gap: 1vw;
+    max-width: 22rem;
+    .theme-1__buttons {
+        padding: 0.5rem 0.5rem;
+        border-radius: 10px;
+        font-size: 2rem;
+        font-weight: 700;
+        background-color: hsl(30, 25%, 89%);
+        cursor: pointer;
+        color: hsl(221, 14%, 31%);
+    }
+    .theme-1-operation__buttons {
+        background-color: hsl(30, 25%, 89%);
+        border-radius: 10px;
+        color: hsl(221, 14%, 31%);
+        font-size: 1.5rem;
+    }
+    .theme-1-delete__button {
+        background-color: hsl(225, 21%, 49%);
+        color: #FFF;
+        border-radius: 10px;
+    }
+    .theme-1-reset__button {
+        background-color: hsl(225, 21%, 49%);
+        color: #FFF;
+        grid-column: 1 / 3;
+        border-radius: 10px;
+    }
+    .theme-1-equals__button {
+        background-color: hsl(6, 63%, 50%);
+        color: #FFF;
+        grid-column: 3 / 5;
+        border-radius: 10px;
+    }
+}
+    
+.keyboard-theme__2 {
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: hsl(0, 5%, 81%);
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-gap: 1vw;
+    max-width: 22rem;
+    .theme-2__buttons {
+        padding: 0.5rem 0.5rem;
+        border-radius: 10px;
+        font-size: 2rem;
+        font-weight: 700;
+        background-color: hsl(45, 7%, 89%);
+        cursor: pointer;
+        color: hsl(60, 10%, 19%);
+    }
+    .theme-2-operation__buttons {
+        background-color: hsl(45, 7%, 89%);
+        border-radius: 10px;
+        color: hsl(60, 10%, 19%);
+        font-size: 1.5rem;
+    }
+    .theme-2-delete__button {
+        background-color: hsl(185, 42%, 37%);
+        color: #FFF;
+        border-radius: 10px;
+    }
+    .theme-2-reset__button {
+        background-color: hsl(185, 42%, 37%);
+        color: #FFF;
+        grid-column: 1 / 3;
+        border-radius: 10px;
+    }
+    .theme-2-equals__button {
+        background-color: hsl(25, 98%, 40%);
+        color: #FFF;
+        grid-column: 3 / 5;
+        border-radius: 10px;
+    }
+}
+.keyboard-theme__3 {
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: hsl(268, 71%, 12%);
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-gap: 1vw;
+    max-width: 22rem;
+    .theme-3__buttons {
+        padding: 0.5rem 0.5rem;
+        border-radius: 10px;
+        font-size: 2rem;
+        font-weight: 700;
+        background-color: hsl(268, 47%, 21%);
+        cursor: pointer;
+        color: hsl(52, 100%, 62%);
+    }
+    .theme-3-operation__buttons {
+        background-color: hsl(268, 47%, 21%);
+        border-radius: 10px;
+        color: hsl(52, 100%, 62%);
+        font-size: 1.5rem;
+    }
+    .theme-3-delete__button {
+        background-color: hsl(281, 89%, 26%);
+        color: #FFF;
+        border-radius: 10px;
+    }
+    .theme-3-reset__button {
+        background-color: hsl(281, 89%, 26%);
+        color: #FFF;
+        grid-column: 1 / 3;
+        border-radius: 10px;
+    }
+    .theme-3-equals__button {
+        background-color: hsl(176, 100%, 44%);
+        color: #FFF;
+        grid-column: 3 / 5;
+        border-radius: 10px;
+    }
+
+}
+
+.attribution {
+    text-align: center;
+}
+
+
+
+
+
+
+
